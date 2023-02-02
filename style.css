@@ -7,8 +7,14 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   height: 100vh;
+  margin: 0;
 }
-
+.body-display{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
 .container {
   text-align: center;
   padding: 20px;
@@ -17,6 +23,8 @@ body {
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
+  text-transform: uppercase;
+  font-family: math;
 }
 
 .page-subtitle {
@@ -41,4 +49,24 @@ body > img {
 
 img {
   max-height: 350px;
+}
+.input-container{
+    margin: 20px 0px;
+}
+.guess-input{
+    min-height: 30px;
+    width: 250px;
+}
+.submit-button{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5%;
+    min-height: 30px;
+    width: 100px;
+    text-transform: uppercase;
+    border: none;
+}
+.submit-button:disabled{
+    opacity: 0.5;
+    
 }
