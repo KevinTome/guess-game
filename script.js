@@ -1,6 +1,5 @@
 const input = document.querySelector('.guess-input')
 const button = document.querySelector('.submit-button')
-const form = document.querySelector('.input-container')
 
 const secretNum = parseInt(Math.random() * 1001);
 
@@ -12,7 +11,7 @@ const validateInput = ({ target }) => {
     }
 }
 
-const checkGuess = () => {
+const checkGuess = (event) => {
     event.preventDefault();
 
     if(input.value == secretNum){
